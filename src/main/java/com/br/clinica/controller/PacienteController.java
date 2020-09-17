@@ -34,5 +34,4 @@ public class PacienteController {
         return pacienteService.allPaciente();
     }
 
-
 }
