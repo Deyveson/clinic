@@ -5,6 +5,8 @@ import com.br.clinica.service.ConsultaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping(value = "/consulta")
 public class ConsultaController {
@@ -25,6 +27,11 @@ public class ConsultaController {
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public Consulta updateConsulta (@RequestBody Consulta consulta) {
         return consultaService.updateConsulta(consulta);
+    }
+
+    @RequestMapping(value = "/findAll", method = RequestMethod.GET)
+    public List<Consulta> findAll(){
+        return consultaService.findAll();
     }
 
 }

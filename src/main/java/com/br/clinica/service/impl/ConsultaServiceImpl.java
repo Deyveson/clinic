@@ -6,6 +6,8 @@ import com.br.clinica.service.ConsultaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service("ConsultaService")
 public class ConsultaServiceImpl implements ConsultaService {
 
@@ -26,6 +28,11 @@ public class ConsultaServiceImpl implements ConsultaService {
     @Override
     public Consulta updateConsulta(Consulta consulta){
         return consultaRepository.save(consulta);
+    }
+
+    @Override
+    public List<Consulta> findAll(){
+        return consultaRepository.findAll();
     }
 
 
