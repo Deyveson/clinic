@@ -44,6 +44,9 @@ Foi disponibilizado um arquivo **docker-compose.yml** contendo os conteiners nec
 > docker-compose up
 
 ## Google Cloud - Data Base connection via 
-- URL Connecttion: jdbc:mysql://34.66.22.186:3306/clinica
+- URL Connecttion: jdbc:postgresql://34.67.124.126:5432/clinic
 - User: clinic
 - Password: root
+
+## Schema da Base de dados
+- 'schema_clinica.sql'
